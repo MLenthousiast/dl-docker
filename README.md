@@ -1,3 +1,6 @@
+## Edit
+This forked version uses Ubuntu 16.04 instead of Ubuntu 14.04
+
 ## All-in-one Docker image for Deep Learning
 Here are Dockerfiles to get you up and running with a fully functional deep learning machine. It contains all the popular deep learning frameworks with CPU and GPU support (CUDA and cuDNN included). The CPU version should work on Linux, Windows and OS X. The GPU version will, however, only work on Linux machines. See [OS support](#what-operating-systems-are-supported) for details
 
@@ -8,7 +11,7 @@ If you are not familiar with Docker, but would still like an all-in-one solution
 
 ## Specs
 This is what you get out of the box when you create a container with the provided image/Dockerfile:
-* Ubuntu 14.04
+* ~~Ubuntu 14.04~~ Ubuntu 16.04
 * [CUDA 8.0](https://developer.nvidia.com/cuda-toolkit) (GPU version only)
 * [cuDNN v5](https://developer.nvidia.com/cudnn) (GPU version only)
 * [Tensorflow](https://www.tensorflow.org/)

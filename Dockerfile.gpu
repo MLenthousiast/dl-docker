@@ -3,8 +3,6 @@ FROM nvidia/cuda:8.0-cudnn5-devel-ubuntu16.04
 MAINTAINER Sai Soundararaj <saip@outlook.com>
 
 ARG THEANO_VERSION=rel-0.8.2
-ARG TENSORFLOW_VERSION=0.12.1
-ARG TENSORFLOW_ARCH=gpu
 ARG KERAS_VERSION=1.2.0
 ARG LASAGNE_VERSION=v0.1
 ARG TORCH_VERSION=latest
@@ -133,8 +131,8 @@ RUN pip --no-cache-dir install --upgrade ipython && \
 
 
 # Install TensorFlow
-RUN pip --no-cache-dir install \
-	https://storage.googleapis.com/tensorflow/linux/${TENSORFLOW_ARCH}/tensorflow_${TENSORFLOW_ARCH}-${TENSORFLOW_VERSION}-cp27-none-linux_x86_64.whl
+RUN 
+RUN pip --no-cache-dir install tensorflow-gpu
 
 
 # Install dependencies for Caffe

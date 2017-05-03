@@ -203,6 +203,10 @@ RUN luarocks install nn && \
 	cd iTorch && \
 	luarocks make
 
+# Install PyTorch
+RUN pip install http://download.pytorch.org/whl/cu75/torch-0.1.12.post2-cp27-none-linux_x86_64.whl && \
+	pip install torchvision
+
 # Install OpenCV
 RUN git clone --depth 1 https://github.com/opencv/opencv.git /root/opencv && \
 	cd /root/opencv && \
